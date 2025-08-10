@@ -9,7 +9,7 @@ def get_input_path(prompt):
     return path
 
 
-vdi_path = "你的.vdi文件路径"
+vdi_path = get_input_path("你的.vdi文件路径: ")
 g = guestfs.GuestFS()
 g.add_drive_opts(vdi_path, format="vdi", readonly=0)
 g.launch()
