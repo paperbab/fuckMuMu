@@ -1,4 +1,5 @@
 import guestfs
+import os
 
 
 def get_input_path(prompt):
